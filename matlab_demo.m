@@ -47,9 +47,9 @@ while(tFuns(ix).name~=testFunction)
     ix = ix + 1;
 end
 
-cme = ilt(tFuns(ix).lt, tFuns(ix).xvals, funEvals, "cme");
-euler = ilt(tFuns(ix).lt, tFuns(ix).xvals, funEvals, "euler");
-gaver = ilt(tFuns(ix).lt, tFuns(ix).xvals, funEvals, "gaver");
+cme = matlab_ilt(tFuns(ix).lt, tFuns(ix).xvals, funEvals, "cme");
+euler = matlab_ilt(tFuns(ix).lt, tFuns(ix).xvals, funEvals, "euler");
+gaver = matlab_ilt(tFuns(ix).lt, tFuns(ix).xvals, funEvals, "gaver");
 exact = arrayfun(tFuns(ix).ilt, tFuns(ix).xvals)';
 
 plot([exact, cme, euler, gaver])

@@ -1,4 +1,4 @@
-function ilt = ilt(fun, T, maxFnEvals, method)
+function ilt = matlab_ilt(fun, T, maxFnEvals, method)
 
 global cmeParams;
 if isempty(cmeParams)

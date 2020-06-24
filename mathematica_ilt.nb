@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     33494,        794]
-NotebookOptionsPosition[     33047,        775]
-NotebookOutlinePosition[     33380,        790]
-CellTagsIndexPosition[     33337,        787]
+NotebookDataLength[     26092,        642]
+NotebookOptionsPosition[     25609,        627]
+NotebookOutlinePosition[     25942,        642]
+CellTagsIndexPosition[     25899,        639]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -324,8 +324,12 @@ Cell[BoxData[
                RowBox[{"Length", "[", "\[Eta]", "]"}]}], "}"}]}], "]"}], "/", 
            "x"}], "]"}], ",", 
          RowBox[{"{", 
-          RowBox[{"x", ",", "T"}], "}"}]}], "]"}], "]"}], ";"}]}], 
-    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+          RowBox[{"x", ",", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"ListQ", "[", "T", "]"}], ",", "T", ",", 
+             RowBox[{"{", "T", "}"}]}], "]"}]}], "}"}]}], "]"}], "]"}], 
+      ";"}]}], "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.757325469151745*^9, 3.757325502280724*^9}, {
    3.75732570552604*^9, 3.757325767957542*^9}, {3.757325851475429*^9, 
    3.7573259078775578`*^9}, {3.7573259980687437`*^9, 3.75732607799338*^9}, {
@@ -344,7 +348,10 @@ Cell[BoxData[
    3.7574027762243433`*^9, 3.757402783353739*^9}, {3.757402817032646*^9, 
    3.757402819721209*^9}, {3.757403106078498*^9, 3.7574031183701763`*^9}, {
    3.75740319359807*^9, 3.7574032188856077`*^9}, {3.7574091525588427`*^9, 
-   3.757409154870949*^9}}],
+   3.757409154870949*^9}, {3.8019831824681797`*^9, 3.8019832067914248`*^9}, {
+   3.801983239697904*^9, 3.801983241672761*^9}, {3.801983370480793*^9, 
+   3.8019833917103777`*^9}, {3.801983446472941*^9, 3.801983533919042*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"642fd32f-b58f-4afa-be6a-7d7291ce64f9"],
 
 Cell[BoxData[
  RowBox[{
@@ -524,9 +531,8 @@ Cell[BoxData[
   3.757408011176996*^9}, {3.757408041620781*^9, 3.757408113191677*^9}, {
   3.757408315515572*^9, 3.757408345522232*^9}, {3.7574085815394087`*^9, 
   3.757408581888969*^9}, {3.757421832722377*^9, 3.757421857121273*^9}, {
-  3.757421889275429*^9, 3.757421928219496*^9}}],
-
-Cell[CellGroupData[{
+  3.757421889275429*^9, 3.757421928219496*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"65ca5cd4-3889-402e-90db-402394ef358c"],
 
 Cell[BoxData[
  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
@@ -616,166 +622,12 @@ dRuInhHY3AGi9+xTXg+iLZ4u3QeiT0mtOgqibwjsOgGiD6x/dwZEexzYfRZE
 m/BeugSit0R5XwXRTVHfXoDoLHGltyA6qu7vNxBdxO34HUS/YpF9ux5Ip0Ue
 eA+iI07t494A8k/xUT4QreQWJwyiv3+NFgGLH9aQBtEVOTpguk7DXx1EZ/cd
 BNPrIngSQDSPUEAGiO7ab71uG8j9FRkbQDQAxJbCrw==
-  "]],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`funEvals$$ = 
-    109, $CellContext`highPrecision$$ = 
-    1, $CellContext`testFunction$$ = $CellContext`staircase, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`funEvals$$], 50}, 3, 200, 1}, {{
-       Hold[$CellContext`highPrecision$$], 1}, {0, 1}}, {
-      Hold[$CellContext`testFunction$$], {$CellContext`staircase, \
-$CellContext`exponential, $CellContext`sine, $CellContext`heavyside, \
-$CellContext`expheavyside, $CellContext`squarewave}}}, Typeset`size$$ = {
-    567., {147., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`funEvals$26144$$ = 
-    0, $CellContext`highPrecision$26145$$ = 
-    False, $CellContext`testFunction$26146$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, 
-      "Variables" :> {$CellContext`funEvals$$ = 
-        50, $CellContext`highPrecision$$ = 
-        1, $CellContext`testFunction$$ = $CellContext`staircase}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`funEvals$$, $CellContext`funEvals$26144$$, 0], 
-        Hold[$CellContext`highPrecision$$, $CellContext`highPrecision$26145$$,
-          False], 
-        Hold[$CellContext`testFunction$$, $CellContext`testFunction$26146$$, 
-         0]}, "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, 
-      "Body" :> ($CellContext`precision = 
-        If[$CellContext`highPrecision$$ == 0, MachinePrecision, 
-          200]; $CellContext`euler = $CellContext`ILT[
-          $CellContext`tFuns[$CellContext`testFunction$$, $CellContext`lt], 
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals], $CellContext`funEvals$$, 
-          "euler", $CellContext`precision]; $CellContext`cme = \
-$CellContext`ILT[
-          $CellContext`tFuns[$CellContext`testFunction$$, $CellContext`lt], 
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals], $CellContext`funEvals$$, 
-          "cme", $CellContext`precision]; $CellContext`gaver = \
-$CellContext`ILT[
-          $CellContext`tFuns[$CellContext`testFunction$$, $CellContext`lt], 
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals], $CellContext`funEvals$$, 
-          "gaver", $CellContext`precision]; $CellContext`exact = Table[
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`ilt][$CellContext`x], {$CellContext`x, 
-           $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals]}]; 
-       ListLinePlot[{$CellContext`exact, $CellContext`cme, \
-$CellContext`euler, $CellContext`gaver}, 
-         PlotLegends -> {"Exact", "CME", "Euler", "Gaver"}, 
-         PlotRange -> $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`yrange], ImageSize -> 480]), 
-      "Specifications" :> {{{$CellContext`funEvals$$, 50}, 3, 200, 
-         1}, {{$CellContext`highPrecision$$, 1}, {0, 1}, ControlType -> 
-         Checkbox}, {$CellContext`testFunction$$, {$CellContext`staircase, \
-$CellContext`exponential, $CellContext`sine, $CellContext`heavyside, \
-$CellContext`expheavyside, $CellContext`squarewave}}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{614., {215., 221.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.757421958518745*^9}]
-}, Open  ]],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`funEvals$$ = 
-    40, $CellContext`highPrecision$$ = 
-    1, $CellContext`testFunction$$ = $CellContext`staircase, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`funEvals$$], 50}, 3, 200, 1}, {{
-       Hold[$CellContext`highPrecision$$], 1}, {0, 1}}, {
-      Hold[$CellContext`testFunction$$], {$CellContext`staircase, \
-$CellContext`exponential, $CellContext`sine, $CellContext`heavyside, \
-$CellContext`expheavyside, $CellContext`squarewave}}}, Typeset`size$$ = {
-    567., {143., 149.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`funEvals$3298$$ = 
-    0, $CellContext`highPrecision$3303$$ = 
-    False, $CellContext`testFunction$3304$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, 
-      "Variables" :> {$CellContext`funEvals$$ = 
-        50, $CellContext`highPrecision$$ = 
-        1, $CellContext`testFunction$$ = $CellContext`staircase}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`funEvals$$, $CellContext`funEvals$3298$$, 0], 
-        Hold[$CellContext`highPrecision$$, $CellContext`highPrecision$3303$$, 
-         False], 
-        Hold[$CellContext`testFunction$$, $CellContext`testFunction$3304$$, 
-         0]}, "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, 
-      "Body" :> ($CellContext`precision = 
-        If[$CellContext`highPrecision$$ == 0, MachinePrecision, 
-          200]; $CellContext`euler = $CellContext`ILT[
-          $CellContext`tFuns[$CellContext`testFunction$$, $CellContext`lt], 
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals], $CellContext`funEvals$$, 
-          "euler", $CellContext`precision]; $CellContext`cme = \
-$CellContext`ILT[
-          $CellContext`tFuns[$CellContext`testFunction$$, $CellContext`lt], 
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals], $CellContext`funEvals$$, 
-          "cme", $CellContext`precision]; $CellContext`gaver = \
-$CellContext`ILT[
-          $CellContext`tFuns[$CellContext`testFunction$$, $CellContext`lt], 
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals], $CellContext`funEvals$$, 
-          "gaver", $CellContext`precision]; $CellContext`exact = Table[
-          $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`ilt][$CellContext`x], {$CellContext`x, 
-           $CellContext`tFuns[$CellContext`testFunction$$, \
-$CellContext`xvals]}]; 
-       ListLinePlot[{$CellContext`exact, $CellContext`cme, \
-$CellContext`euler, $CellContext`gaver}, 
-         PlotLegends -> {"Exact", "CME", "Euler", "Gaver"}, ImageSize -> 
-         480]), "Specifications" :> {{{$CellContext`funEvals$$, 50}, 3, 200, 
-         1}, {{$CellContext`highPrecision$$, 1}, {0, 1}, ControlType -> 
-         Checkbox}, {$CellContext`testFunction$$, {$CellContext`staircase, \
-$CellContext`exponential, $CellContext`sine, $CellContext`heavyside, \
-$CellContext`expheavyside, $CellContext`squarewave}}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{614., {222., 228.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Input",
- CellChangeTimes->{3.757409997396144*^9, 3.7574100867906523`*^9}]
+  "],
+ CellLabel->"In[4]:=",ExpressionUUID->"689cd0fe-f194-47a6-8a3d-6fd5d464b278"]
 },
-WindowSize->{868, 910},
-WindowMargins->{{0, Automatic}, {Automatic, 57}},
-FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+WindowSize->{1680, 972},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -789,13 +641,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 13873, 326, 1045, "Input"],
-Cell[14434, 348, 7181, 178, 976, "Input"],
-Cell[CellGroupData[{
-Cell[21640, 530, 3395, 88, 319, "Input"],
-Cell[25038, 620, 4033, 76, 453, "Output"]
-}, Open  ]],
-Cell[29086, 699, 3957, 74, 467, InheritFromParent]
+Cell[558, 20, 14309, 333, 886, "Input",ExpressionUUID->"642fd32f-b58f-4afa-be6a-7d7291ce64f9"],
+Cell[14870, 355, 7259, 179, 960, "Input",ExpressionUUID->"65ca5cd4-3889-402e-90db-402394ef358c"],
+Cell[22132, 536, 3473, 89, 239, "Input",ExpressionUUID->"689cd0fe-f194-47a6-8a3d-6fd5d464b278"]
 }
 ]
 *)
